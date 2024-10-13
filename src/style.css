@@ -1,0 +1,108 @@
+/* styles.css */
+
+/* Container for all products */
+.product-list {
+    display: flex; /* Flexbox for layout */
+    flex-wrap: wrap; /* Wrap items to the next row */
+    gap: 20px; /* Space between items */
+    padding: 20px; /* Padding around the container */
+    justify-content: flex-start; /* Align items to the start */
+  }
+  
+  /* Each individual product card */
+  .product-card {
+    display: flex;
+    flex-direction: column; /* Stack children vertically */
+    align-items: center; /* Center align items */
+    justify-content: space-between; /* Space between elements */
+    width: 280px; /* Increased width for each product card */
+    height: 420px; /* Reduced height for each product card */
+    padding: 15px; /* Padding inside the card */
+    border: 1px solid #ddd; /* Light border */
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Light shadow */
+    background-color: #fff; /* White background */
+    margin-bottom: 20px; /* Margin below each card */
+    box-sizing: border-box; /* Include padding and border in the element's width and height */
+    overflow: hidden; /* Prevent overflow */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transition for hover effect */
+  }
+  
+  /* Hover effect for product card */
+  .product-card:hover {
+    transform: scale(1.05); /* Slightly enlarge the card */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Darker and larger shadow on hover */
+  }
+  
+  /* Image styling */
+  .product-image {
+    width: 100%; /* Full width */
+    height: 150px; /* Fixed height to reduce overall height */
+    object-fit: contain; /* Contain the image within the specified dimensions */
+    border-radius: 4px; /* Rounded corners for images */
+    margin-bottom: 10px; /* Space below the image */
+    background-color: #f7f7f7; /* Light background to handle transparency */
+  }
+  
+  /* Title styling */
+  .product-title {
+    font-size: 1.1rem; /* Slightly larger font */
+    font-weight: bold; /* Bold font */
+    margin-bottom: 8px; /* Space below the title */
+    text-align: center; /* Center-align the title */
+    overflow: hidden; /* Prevent overflow */
+    text-overflow: ellipsis; /* Add ellipsis for overflow text */
+    white-space: nowrap; /* Prevent text wrap */
+    max-width: 100%; /* Maximum width for the title */
+  }
+  
+  /* Description styling */
+  .product-description {
+    font-size: 0.85rem; /* Slightly smaller font */
+    color: #666; /* Gray color */
+    text-align: center; /* Center-align the description */
+    margin-bottom: 8px; /* Space below the description */
+    max-height: 40px; /* Limit height for descriptions */
+    overflow: hidden; /* Prevent overflow */
+    text-overflow: ellipsis; /* Add ellipsis for overflow text */
+    white-space: normal; /* Allow text wrap */
+  }
+  
+  /* Price styling */
+  .product-price {
+    font-size: 1rem; /* Regular size */
+    font-weight: bold; /* Bold price */
+    color: #333; /* Darker color */
+    margin-bottom: 10px; /* Space below the price */
+  }
+  
+  /* Button container styling */
+  .button-container {
+    display: flex; /* Flexbox for buttons */
+    align-items: center; /* Center-align buttons */
+    gap: 10px; /* Space between buttons */
+    margin-top: 10px; /* Space above buttons */
+  }
+  
+  /* Button styling */
+  .product-button {
+    padding: 5px 10px; /* Padding for buttons */
+    border: none; /* No border */
+    border-radius: 5px; /* Rounded corners */
+    background-color: #007bff; /* Blue background */
+    color: white; /* White text */
+    cursor: pointer; /* Pointer cursor on hover */
+    transition: background-color 0.3s ease; /* Smooth transition */
+  }
+  
+  /* Button hover effect */
+  .product-button:hover {
+    background-color: #0056b3; /* Darker blue on hover */
+  }
+  
+  /* Units display styling */
+  .units-display {
+    font-size: 1rem; /* Regular size */
+    font-weight: bold; /* Bold text */
+  }
+  
